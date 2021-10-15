@@ -1,0 +1,135 @@
+.cc {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.b {
+    opacity: 0;
+}
+
+.bk a{
+    color: #2d1b15;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.mtt-2 {
+    /* padding: 20px 0 0 0; */
+    margin: 80px 0 -35px 0;
+}
+.mtt-2 a {
+    color: #432300;
+}
+@media screen and (max-width:812px) {
+    .mtt-2 {
+        /* padding: 10px; */
+        margin: 80px 0 -35px 0;
+    }
+}
+
+
+
+ /* for desktop */
+ .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 10px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+
+.social {
+    position: fixed;
+    top: 30%;
+    z-index: 9999 !important;
+  }
+  
+  .social ul {
+    list-style-type: none;
+    padding: 0;
+    transform: translatex(-250px);
+  }
+  
+  .social ul li {
+    display: block;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+  }
+  
+  .social ul li:hover {
+    transform: translatex(10px);
+  }
+  
+  .social ul li.twitter:hover {
+    background-color: #55acee;
+  }
+  
+  .social ul li.facebook:hover {
+    background-color: #3b5999;
+  }
+  
+  .social ul li.google-plus:hover {
+    background-color: #dd4b39;
+  }
+  
+  .social ul li.instagram:hover {
+    background-color: #e4405f;
+  }
+  
+  .social ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social ul li i {
+    text-align: center;
+    color: #432300;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    transform: rotate(0deg);
+  }
+  
+  .social ul li:hover i {
+    transform: rotate(360deg);
+    transition: all 1s;
+  }
