@@ -7,6 +7,12 @@ const Header = () => {
   
   return (
     <div id="navigation" className="top-bar">
+      <div className="text-center">
+      <p className="mob-hide">
+                  <i className="icofont icofont-ui-call"></i>
+                  <a href="tel:0302 9228222"> 0302 9228222</a>
+                </p>
+      </div>
       <nav className="navbar navbar-default">
         <div className="container">
           {/* Brand and toggle get grouped for better mobile display */}
@@ -29,8 +35,8 @@ const Header = () => {
           </div>
           {/* Collect the nav links, forms, and other content for toggling */}
           <div className="collapse navbar-collapse" id="site-collapse-nav">
-            <ul className="navbar-right pt-30">
-              <li>
+            <ul className="navbar-right pt-30 ">
+              <li className="hh">
                 <p className="cc">For Bookings Call</p>
                 <p className="bk">
                   <a href="tel:0302 9228222"> 0302 9228222</a>

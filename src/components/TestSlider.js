@@ -56,7 +56,7 @@ const TestSlider = () => {
           lHead="TYPE C | 2 SIDE CORNER"
           imgSrc="images/bg/sliver-luxury.webp"
           toLink="about"
-          aLink="pdf/Silver.pdf"
+          aLink="pdf/silver.pdf"
           id="sl_a"
         />
 

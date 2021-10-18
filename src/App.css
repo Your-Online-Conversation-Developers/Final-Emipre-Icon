@@ -28,11 +28,34 @@
         /* padding: 10px; */
         margin: 80px 0 -35px 0;
     }
+    .mob-hide {
+      display:block !important;
+    }
+    .top-bar {
+      padding: 0px 0px 5px 0px;
+  }
+  .hh {
+    display: none !important;
+  }
 }
 
 
 
  /* for desktop */
+ .mob-hide {
+  background: #432300;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 5px;
+    margin-bottom: 5px;
+    color:#FFF;
+    display:none;
+}
+
+.mob-hide a{
+  color:#FFF;
+}
+
  .whatsapp_float {
     position: fixed;
     width: 60px;
@@ -71,7 +94,7 @@
 .social {
     position: fixed;
     top: 30%;
-    z-index: 9999 !important;
+    z-index: 100 !important;
   }
   
   .social ul {

@@ -41,6 +41,7 @@ const App = () => {
       <a
         href="https://wa.me/00923029228222"
         className="whatsapp_float"
+        id="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
       >

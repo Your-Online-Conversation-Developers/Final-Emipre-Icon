@@ -16,16 +16,16 @@ const MobileSlider = () => {
     <div className="mobile-slider-container mobile-slider">
       <Slider {...settings}>
         <div className="single-hSlider hSlide-one">
-          <img src="images/bg/mdiamond-luxury.jpg" alt="mobile" />
+          <img src="images/bg/msilver-luxury.webp" alt="mobile" />
         </div>
         <div className="single-hSlider hSlide-one">
-          <img src="images/bg/mgold-luxury.jpg" alt="mobile" />
+          <img src="images/bg/mgold-luxury.webp" alt="mobile" />
         </div>
         <div className="single-hSlider hSlide-one">
-          <img src="images/bg/msilver-luxury.jpg" alt="mobile" />
+          <img src="images/bg/mdiamond-luxury.webp" alt="mobile" />
         </div>
         <div className="single-hSlider hSlide-one">
-          <img src="images/bg/msilver.jpg" alt="mobile" />
+          <img src="images/bg/mgold-duplex.webp" alt="mobile" />
         </div>
       </Slider>
     </div>
