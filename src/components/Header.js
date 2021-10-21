@@ -3,32 +3,25 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
 const Header = () => {
-
-  
   return (
     <div id="navigation" className="top-bar">
       <div className="text-center">
-      <p className="mob-hide">
-                  <i className="icofont icofont-ui-call"></i>
-                  <a href="tel:0302 9228222"> 0302 9228222</a>
-                </p>
+        <p className="mob-hide">
+          <i className="icofont icofont-ui-call"></i>
+          <a href="tel:0302 9228222"> 0302 9228222</a>
+        </p>
       </div>
-      <nav className="navbar navbar-default">
+      <nav className="navbar">
         <div className="container">
           {/* Brand and toggle get grouped for better mobile display */}
           <div className="navbar-header">
-            <button
-              type="button"
-              className="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#site-collapse-nav"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Toggle navigation</span>
+
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-collapse-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar" />
               <span className="icon-bar" />
               <span className="icon-bar" />
-            </button>
+          </button>
             <NavLink className="navbar-brand nav-item" to="/">
               <img src="images/logo.png" alt="logo" className="top-logo" />
             </NavLink>

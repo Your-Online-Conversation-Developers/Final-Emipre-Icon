@@ -1,74 +1,98 @@
-import React from "react";
-import emailjs from "emailjs-com";
+import React, { useState } from "react";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
+import axios from "axios";
 import { useHistory } from "react-router";
-
-const SERVICE_ID = "service_283dje2";
-const TEMPLATE_ID = "template_rd8x0a9";
-const USER_ID = "user_2ZsbsuUZVs6XbeFA6nqmW";
-
-// const SERVICE_ID = "service_tbnekrr";
-// const TEMPLATE_ID = "template_ub4q2bn";
-// const USER_ID = "user_JUni0aUDcak4x0ceuTuKz";
 
 const EmailForm = () => {
   const history = useHistory();
 
+  const [values, setValues] = useState({
+    user_name: "",
+    contact_number: "",
+    user_email: "",
+    user_message: "",
+  });
+  
+  function handleChange(e) {
+    const key = e.target.id;
+    const value = e.target.value;
+    setValues((values) => ({
+        ...values,
+        [key]: value,
+    }));
+  }
+  
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
-      (result) => {
-        console.log(result.text);
+    
+    var name = values.user_name;
+    var phone = values.contact_number;
+    var email = values.user_email;
+    var message = values.user_message;
+
+    axios({
+      method: 'post',
+      url: 'https://empireicon.com/php-mailer/callback.php',
+      data: "action=add&name="+name+"&phone="+phone+"&email="+email+"&message="+message
+  }).then(function (response) {
+      if (response.data === 'Success') {
         history.push('/thank-you');
-      },
-      (error) => {
-        console.log(error.text);
-        alert("Something went wrong");
       }
-    );
-    e.target.reset();
+    })
+    .catch(function (error) {
+        alert('Something Went Wrong');
+    });
+  
   };
   return (
-    <div className="appointment-form" id="appointment-form">
+    <div className="appointment-form">
         <h6>Schedule a visit</h6>
       <Form onSubmit={handleOnSubmit}>
         <div className="input-box">
           <Form.Field
-            id="form-input-control-last-name"
+            id="user_name"
             control={Input}
             label="Name"
             name="user_name"
-            placeholder="Name…"
+            placeholder="Name"
+            value={values.user_name}
+            onChange={handleChange}
             required
           />
         </div>
         <div className="input-box">
           <Form.Field
-            id="form-input-control-last-name"
+            id="contact_number"
             control={Input}
             label="Phone"
             name="contact_number"
-            placeholder="Phone…"
+            placeholder="Phone"
+            value={values.contact_number}
+            onChange={handleChange}
             required
           />
         </div>
         <div className="input-box">
           <Form.Field
-            id="form-input-control-email"
+            id="user_email"
             control={Input}
             label="Email"
             name="user_email"
-            placeholder="Email…"
+            placeholder="Emai"
+            value={values.user_email}
+            onChange={handleChange}
             required
           />
         </div>
         <div className="input-box">
           <Form.Field
-            id="form-textarea-control-opinion"
+            id="user_message"
             control={TextArea}
             label="Message"
             name="user_message"
-            placeholder="Message…"
+            placeholder="Message"
+            value={values.user_message}
+            onChange={handleChange}
             required
           />
         </div>

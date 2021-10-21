@@ -566,7 +566,6 @@ body {
 /*.video-section*/
 
 .video-section {
-  background: url(../images/bg/video.webp);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -798,7 +797,8 @@ padding: 0 0 10px;
 /*.cta-section*/
 
 .cta-section {
-  background: url(../images/bg/cta.webp) center center;
+  background-position: center;
+  background-attachment: "center";
   background-size: cover;
 }
 .cta-section .overlay {

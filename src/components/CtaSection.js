@@ -1,10 +1,11 @@
 import React from "react";
 import CustomPopup from "./elements/CustomPopup";
+import CtaImg from "../bgs/cta.webp"
 
 const CtaSection = () => {
 
   return (
-    <div className="cta-section" id="cta-section">
+    <div className="cta-section" id="cta-section" style={{backgroundImage: `url(${CtaImg})`}}>
       <div className="overlay">
         <div className="container">
           <div className="row text-center">

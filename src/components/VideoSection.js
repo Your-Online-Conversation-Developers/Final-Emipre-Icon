@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import 'react-modal-video/css/modal-video.min.css';
+import VideoImg from "../bgs/video.webp"
 
 
 const VideoSection = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="video-section" id="tvc">
+    <div className="video-section" id="tvc" style={{backgroundImage: `url(${VideoImg})`}}>
       <div className="overlay">
         <div className="container">
           {/* .row */}

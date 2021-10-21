@@ -1,4 +1,7 @@
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "./font.css";
+import "./style.css";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import Header from "./components/Header";

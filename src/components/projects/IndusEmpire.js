@@ -102,8 +102,8 @@ const IndusEmpire = () => {
         </div>
       </div>
 
-      <div className="row project-gallery">
       <SRLWrapper>
+      <div className="row project-gallery">
         <div className="col-xs-6 col-sm-4 col-md-3">
           <div className="single-gallery">
             <a href="images/gallery/4.webp" className="large-view">
@@ -199,15 +199,18 @@ const IndusEmpire = () => {
             </a>
           </div>
         </div>
-        </SRLWrapper>
         {/* .col */}
       </div>
+        </SRLWrapper>
 
       <div className="row btn-center">
+        <div className="col-12">
         <button onClick={() => history.push("/")} className="go-back-btn">
           Go Back
         </button>
+        </div>
       </div>
+      
     </div>
   );
 };

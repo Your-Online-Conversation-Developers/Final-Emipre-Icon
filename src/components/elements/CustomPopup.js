@@ -1,7 +1,7 @@
 import React from "react";
-import RequestForm from "./RequestForm";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import EmailForm from "./EmailForm";
 
 const CustomPopup = ({ title , cposition}) => {
   const contentStyle = { background: "#fff", width: "50%" };
@@ -18,7 +18,7 @@ const CustomPopup = ({ title , cposition}) => {
       <button className="close" onClick={close}>
           &times;
         </button>
-        <RequestForm />
+        <EmailForm />
       </div> )}
     </Popup>
   );

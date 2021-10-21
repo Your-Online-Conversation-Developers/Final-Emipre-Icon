@@ -20,8 +20,8 @@ const Gallery = () => {
           {/* .row */}
         </div>
         {/* .section-head */}
-        <div className="row">
         <SRLWrapper>
+        <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="single-gallery">
             <a
@@ -112,8 +112,9 @@ const Gallery = () => {
             </div>
           </div>
           {/* .col */}
-          </SRLWrapper>
+          
         </div>
+        </SRLWrapper>
         {/* .row */}
       </div>
       {/* .container */}

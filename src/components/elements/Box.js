@@ -2,7 +2,7 @@ import React from "react";
 
 const Box = ({ iconClass, h6Text, pText = "", placeImg = "" }) => {
   return (
-    <div className="col-md-3 col-sm-6">
+    <div className="col-sm-6 col-md-3">
       <div className="single-place">
         <i className={iconClass} />
         {placeImg ? (
